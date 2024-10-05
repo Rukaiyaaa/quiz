@@ -7,10 +7,10 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name="home"),
-    path('category/<slug:category_slug>/',views.home, name='category_wise_post'),
     path('account/', include('account.urls')),
-    path('quizes/', include('quizes.urls')),
+    path('', include('quizes.urls')),
+    path('', include('category.urls')),
+    path('', include('questions.urls')),
 ]
 
 
