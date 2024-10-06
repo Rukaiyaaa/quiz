@@ -35,7 +35,7 @@
                   <a class="btn btn-danger" href="{% url 'user_logout' %}">Logout</a>
                 </li> {% endcomment %}
 
-              {% else %}
+        {% else %}
 
                 <li class="nav-item mx-3">
                   <a class="btn btn-warning" href="{% url 'user_register' %}">register</a>
@@ -45,7 +45,7 @@
                     <a class="btn btn-primary" href="{% url 'user_login' %}">login</a>
                 </li>
 
-              {% endif %}
+        {% endif %}
       </div>
     </nav>
 
