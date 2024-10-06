@@ -66,7 +66,7 @@ const handleLogin = (event) => {
           if (data.token && data.user_id) {
             localStorage.setItem("token", data.token);
             localStorage.setItem("user_id", data.user_id);
-            window.location.href = "index.html";
+            window.location.href = "{% url 'base' %}";
           }
         });
     }

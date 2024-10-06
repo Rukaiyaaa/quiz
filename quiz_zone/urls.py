@@ -8,6 +8,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('user-register/', views.home, name='user_register'),
+    path('', views.my_view, name='base'),
     path('user-login/', views.Userlogin, name='user_login'),
     path('account/', include('account.urls')),
     path('', include('quizes.urls')),

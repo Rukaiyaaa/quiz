@@ -5,3 +5,6 @@ def home(request):
 
 def Userlogin(request):
     return render(request, 'login.html')
+
+def my_view(request):
+    return render(request, 'base.html')
