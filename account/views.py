@@ -30,7 +30,7 @@ class UserRegistrationApiView(APIView):
             print("token ", token)
             uid = urlsafe_base64_encode(force_bytes(user.pk))
             print("uid ", uid)
-            confirm_link = f"https://quiz-liard-theta.vercel.app/user-login/active/{uid}/{token}"
+            confirm_link = f"https://quiz-liard-theta.vercel.app/account/active/{uid}/{token}"
             email_subject = "Confirm Your Email"
             email_body = render_to_string('confirm_email.html', {'confirm_link' : confirm_link})
             
