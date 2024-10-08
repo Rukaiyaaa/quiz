@@ -67,7 +67,8 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:8000", 
     "https://quiz-liard-theta.vercel.app", 
-    "http://127.0.0.1:5500"
+    "http://127.0.0.1:5500",
+    "https://quiz-zone-frontend.onrender.com"
 ]
 
 CORS_ALLOW_CREDENTIALS = True
